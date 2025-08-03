@@ -22,4 +22,4 @@ def get_forecast(country: str = Query(...)):
 def get_countries():
     with open("country_list.json", "r") as f:
         countries = json.load(f)
-    return {"countries": countries}
+    return {"countries": countries} 
